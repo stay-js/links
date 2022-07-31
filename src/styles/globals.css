@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  @apply antialiased;
+}
+
+.item {
+  @apply flex items-center justify-center gap-2 py-3 text-xl font-semibold text-center text-black transition-colors bg-white border rounded hover:bg-transparent hover:text-white;
+}
