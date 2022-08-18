@@ -1,21 +1,28 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "useDefineForClassFields": true,
-    "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
     "strict": true,
-    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
-    "noEmit": true,
+    "importsNotUsedAsValues": "error",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "skipLibCheck": true
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"]
+    }
   },
-  "include": ["src", "vite-env.d.ts"],
+  "include": ["env.d.ts", "src"],
   "exclude": ["node_modules"]
 }
