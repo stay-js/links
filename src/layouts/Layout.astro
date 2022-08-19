@@ -1,10 +1,11 @@
 ---
 export interface Props {
+  path: string;
   title: string;
   description: string;
 }
 
-const { title, description } = Astro.props as Props;
+const { path, title, description } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -36,10 +37,6 @@ const { title, description } = Astro.props as Props;
     <meta property="og:image" content="https://links.znagy.hu/me.jpg" />
     <meta name="theme-color" content="#0f172a" />
 
-    <meta name="url" content="https://links.znagy.hu/" />
-    <meta property="og:url" content="https://links.znagy.hu/" />
-    <meta property="twitter:url" content="https://links.znagy.hu/" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="znagy.hu" />
     <meta name="twitter:image" content="https://links.znagy.hu/me.jpg" />
@@ -50,6 +47,10 @@ const { title, description } = Astro.props as Props;
     <meta name="rating" content="general" />
 
     <meta name="generator" content={Astro.generator} />
+
+    <meta name="url" content={`https://links.znagy.hu${path}`} />
+    <meta property="og:url" content={`https://links.znagy.hu${path}`} />
+    <meta property="twitter:url" content={`https://links.znagy.hu${path}`} />
 
     <title>{title}</title>
     <meta property="og:title" content={title} />
