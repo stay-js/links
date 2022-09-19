@@ -9,10 +9,12 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@astrojs/tailwind": "^2.0.1",
+    "tailwindcss": "^3.0.24"
+  },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.2.0",
+    "astro": "^1.2.6",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13"
   }
