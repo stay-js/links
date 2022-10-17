@@ -9,9 +9,10 @@ const { title, href } = Astro.props as Props;
 
 <li>
   <a
-    target="_blank"
     class="flex items-center justify-center gap-2 rounded border bg-white p-3 text-center text-xl font-bold text-black transition-colors hover:bg-transparent hover:text-white"
     href={href}
+    target="_blank"
+    rel="noopener noreferrer"
   >
     <slot />
     {title}
