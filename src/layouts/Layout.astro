@@ -1,4 +1,6 @@
 ---
+import { keywords } from '@constants/keywords';
+
 import '@styles/globals.css';
 
 interface Props {
@@ -15,22 +17,20 @@ const { path, title, description } = Astro.props as Props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <link rel="icon" href="/favicon.ico" />
 
-    <meta name="author" content="stay" />
+    <meta name="author" content="Zétény Nagy" />
 
-    <meta
-      name="keywords"
-      content="stay, Zétény, Nagy, Zétény Nagy, Full stack dev, Full stack developer, IT, IT Student, Kyokushin, Kyokushin Karate, Muay Thai, Thai Box, Thai-Boxing, Hungary, JavaScript, TypeScript, Node.js, Express, React, Next.js, Sass, SCSS, Tailwind CSS, TailwindCSS, tailwind, Mantine, tRPC, MySQL, Postgres, PostgreSQL,
-          PlanetScale, Railway, Bootstrap, t3-stack, MongoDB, HTML, HTML5, CSS, CSS3, Nodemailer, Vercel, Netlify, Heroku, Linode, DigitalOcean, Vercel, Discord.js, REGALE Energy Zrt., Anything, Resume, Education, Skills, Hobbies, IT, Web Development, Web Developer, Data modeling, Data structuring, DevOps, Cloud, Networking,
-          Languages & Libraries, Technologies, Platforms, School, Újlaki Általános Iskola, BMSzC Neumann János Informatikai Technikum"
-    />
+    <meta name="keywords" content={keywords.join(', ')} />
+
+    <meta name="theme-color" content="#0f172a" />
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Zétény Nagy" />
     <meta property="og:image" content="https://links.znagy.hu/me.jpg" />
-    <meta name="theme-color" content="#0f172a" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="znagy.hu" />
@@ -39,8 +39,6 @@ const { path, title, description } = Astro.props as Props;
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="rating" content="general" />
-
-    <meta name="generator" content={Astro.generator} />
 
     <meta name="url" content={`https://links.znagy.hu${path}`} />
     <meta property="og:url" content={`https://links.znagy.hu${path}`} />
@@ -53,6 +51,8 @@ const { path, title, description } = Astro.props as Props;
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
     <meta name="twitter:description" content={description} />
+
+    <meta name="generator" content={Astro.generator} />
   </head>
 
   <body>
