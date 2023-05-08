@@ -1,8 +1,6 @@
 ---
 import { keywords } from '@constants/keywords';
 
-import '@styles/globals.css';
-
 interface Props {
   path: string;
   title: string;
@@ -13,7 +11,7 @@ const { path, title, description } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +52,13 @@ const { path, title, description } = Astro.props as Props;
     <meta name="generator" content={Astro.generator} />
   </head>
 
-  <body>
+  <body class="overflow-x-hidden bg-slate-900 text-white">
     <slot />
   </body>
+
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+  </style>
 </html>

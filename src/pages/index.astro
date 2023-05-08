@@ -4,7 +4,7 @@ import Item from '@components/Item.astro';
 ---
 
 <Layout path="/" title="Links - Zétény Nagy" description="Links - Zétény Nagy">
-  <main>
+  <main class="mx-auto my-8 flex w-[90%] flex-col items-center gap-4">
     <img
       src="/me.jpg"
       alt="me"
@@ -22,6 +22,8 @@ import Item from '@components/Item.astro';
 
     <div class="w-full max-w-xl">
       <h3 class="mb-2 text-center text-lg font-bold">Main stuff:</h3>
+
+      <input type="text" />
 
       <ul class="flex w-full flex-col gap-4">
         <Item title="Website" href="https://znagy.hu">
