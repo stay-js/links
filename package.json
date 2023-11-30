@@ -10,14 +10,14 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^5.0.0",
-    "@types/node": "^20.8.2",
-    "astro": "^3.2.2",
+    "@astrojs/tailwind": "^5.0.2",
+    "@types/node": "^20.10.1",
+    "astro": "^3.6.3",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.5",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.2.2"
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2"
   }
 }
